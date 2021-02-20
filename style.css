@@ -34,3 +34,2669 @@
         #cboxLoadingGraphic{background:url(images/loading.gif) no-repeat center center;}
         #cboxClose{position:absolute; top:5px; right:5px; display:block; background:url(images/controls.png) no-repeat top center; width:38px; height:19px; text-indent:-9999px;}
         #cboxClose.hover{background-position:bottom center;}
+
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 75.05%;
+	margin: 0px;
+	padding: 0px;
+	background-color: #D8E0E3;
+	background-repeat: repeat-y;
+	background-position: 50% 0px;
+	background-image: url(http://www.nobelprize.org/images/general/blue_bg.png);
+	/* ADDED BY ANDREAS*/
+	/* Original: */
+	/*background-image: url(http://www.nobelprize.org/images/general/blue_bg.png)*/
+	/* /original */
+	
+	/*background-image: url(http://test.nobelmedia.se/images/general/white-bg-new.png), url(http://test.nobelmedia.se/images/general/space-bg_small-file.jpg);
+	background-attachment: scroll, fixed;
+	background-size: auto, cover;*/
+	/* /added by andreas */
+	padding-bottom: 20px;
+}
+img {
+	border: none;
+}
+h1 {
+	font-size: 2.273em;
+	color: #024664;
+	font-weight: normal;
+	padding:0;
+	margin-bottom:8px;
+	margin-top:2px;
+}
+h2 {
+	font-size: 1.82em;
+	color: #024664;
+	font-weight: normal;
+	margin-bottom:8px;
+	margin-top:2px;
+}
+h3 {
+	font-size: 1.42em;
+	color: #024664;
+	font-weight: normal;
+	margin-bottom:0;
+	margin-top:0;
+}
+h4 {
+	font-size: 1.17em;
+	color: #024664;
+	font-weight: normal;
+	margin-bottom:0;
+	margin-top:0;
+}
+p {
+	margin-bottom:15px;
+	margin-top:0;
+}
+hr {
+	color:#D7D5D5;
+	background-color:#D7D5D5;
+	height:1px;
+	border:none;
+}
+a {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: transparent;
+	color: #307598;
+	text-decoration: none;
+}
+.float_left {
+	float:left;
+	padding-right:10px;
+	padding-bottom:5px;
+}
+.float_right {
+	float:right;
+	padding-left:10px;
+	padding-bottom:5px;
+}
+/* IE6 */
+* html a {
+	border-bottom-color: #ffffff;
+	border-width: 0px;
+	border-style: none;
+}
+a:hover {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	/*border-bottom-color: #DBA80A;*/
+	border-bottom-color: #307598;
+}
+a.no_line:hover {
+	border-bottom-color: transparent !important;/*border-style: none !important;*/
+}
+.flag_area {
+	padding-bottom:8px;
+}
+#content_area p {
+	line-height: 1.25em;
+}
+.ingress {
+	font-size: 1.17em;
+	line-height: 1.42em;
+	color: #8A8384;
+}
+/* IE6 css fixer v0.7: Tue, 23 Mar 2010 13:50:12 +0100 */
+
+/* ============================================= */
+/* safe settings                                 */
+
+/* add display:inline to floated elements */
+* html #left_navigation, * html #content, * html #content #content_area, * html #content #right_column, * html #wrapper #wrapper_inside #header #logo, * html #wrapper #wrapper_inside #header #tagline, * html #wrapper #wrapper_inside #top_menu #top_menu_left, * html #wrapper #wrapper_inside #top_menu #search, * html #outside, * html #main_menu, * html #main_menu li, * html #search .search_left, * html #search .search_right, * html #main_area, * html year_navigation {
+	display:inline;
+}
+/* General Layout */
+
+
+#outside {
+	width: 100%;
+	clear: both;
+	float: left;
+	margin-bottom: 10px;
+}
+#wrapper {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+	float: none;
+}
+#wrapper_inside {
+	padding: 0px;
+	margin: 0px;
+	background-color: #FFF;
+}
+#content {
+	float: right;
+	width: 737px;
+	background-color: #FFF;
+}
+#content_video {
+	float: left;
+	width: 960px;
+	background-color: #FFF;
+}
+#content #content_area, #content_video #content_video_area {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #D7D5D5;
+}
+#content #content_area {
+	float: left;
+	width: 515px;
+}
+#content_video #content_video_area {
+	float: left;
+	width: 720px;
+}
+#content #right_column, #content_video #right_column {
+	float: right;
+	width: 202px;
+}
+/* Header area (including helplinks, breadcrumbs and search) */
+/*****************************************************/
+
+#header {
+	margin: 0px;
+	padding: 0px;
+	height: 100px;
+	background-color: #FFF;
+}
+#header #logo {
+	float: left;
+	padding-top: 27px;
+}
+
+#header .logo {
+	float: left;
+	width: 294px;
+}
+
+#front_img_menu {
+	float: right;
+	max-width: 650px;
+	display: none;
+}
+
+#front_img_menu img {
+	float: right;
+}
+
+#header #tagline {
+	float: right;
+	padding-top: 44px;
+}
+#top_menu {
+	clear: both;
+	height: 46px;
+}
+.helplink_area {
+	color: #8A8384;
+	height: 20px;
+	text-align: right;
+	background-color: #FFF;
+	font-size: 0.92em;
+}
+.helplink_area a {
+	color: #8A8384;
+	text-decoration: none;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #D7D5D5;
+	padding:0;
+	padding-right: 9px;
+	padding-left: 9px;
+}
+.helplink_area a.helplink_first {
+	color: #8A8384;
+	text-decoration: none;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #D7D5D5;
+	padding-right: 9px;
+	padding-left: 0px;
+}
+.helplink_area a.helplink_last {
+	border-right-style: none;
+	margin-right: 11px;
+	padding-right:0;
+}
+.helplink_area a.helplink:hover, .helplink_area a.helplink_last:hover, .helplink_area a.helplink_first:hover {
+	border-bottom-color: transparent !important;
+}
+.helplink_area a.helplink:hover span.theLink, .helplink_area a.helplink_last:hover span.theLink, .helplink_area a.helplink_first:hover span.theLink {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #DBA80A;
+}
+.helplink_area .selected {
+	font-weight: bold;
+	color: #024664 !important;
+}
+#breadcrumbs {
+	height: 42px;
+	color: #B7B3B4;
+	background-color: #FFF;
+	font-size: 0.92em;
+}
+#breadcrumbs .bread_inside {
+	padding-top: 15px;
+	padding-left: 5px;
+}
+#breadcrumbs .bread_inside a {
+	color: #B7B3B4;
+	text-decoration: none;
+}
+#breadcrumbs .bread_inside span.last {
+	color: #678A9C;
+}
+#breadcrumbs .bread_inside a:hover {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #B7B3B4;
+}
+#search {
+	clear: right;
+	float: right;
+	height: 26px;
+	width: 266px;
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_whitebg.png);
+	background-position: 0px -154px;
+}
+#search #search_form {
+	margin: 0px;
+	padding: 0px;
+}
+#search #search_form #search_field {
+	margin: 0px;
+	padding: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#search .search_left {
+	float: left;
+	height: 26px;
+	width: 187px;
+}
+#search .search_right {
+	float: right;
+	height: 26px;
+	width: 79px;
+}
+#search .search_left input {
+	height: 15px;
+	width: 178px;
+	border: 1px solid transparent;
+	background-color: transparent;
+}
+/* IE6 */
+* html #search .search_left input {
+	border: 1px solid #FFF;
+	background-color: transparent;
+}
+#search .search_left .inside {
+	padding-top: 3px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 3px;
+}
+.search_right a.search_submit {
+	display: block;
+	height: 26px;
+}
+#search .search_right a.search_submit:hover {
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_whitebg.png);
+	background-position: -489px -154px;
+}
+#search .search_right .search_submit.no_line span.inside {
+	display: block;
+	font-size: 13px;
+	color: #FFF;
+	padding-top: 5px;
+	padding-left: 10px;
+}
+/* Navigation */
+
+#top_menu #top_menu_left {
+	float: left;
+	clear: left;
+	width: 690px;
+	height: 26px;
+}
+#left_navigation {
+	float: left;
+	width: 202px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #D7D5D5;
+	font-size: 12px;
+	background-color: #FFF;
+}
+#main_menu, #footer_menu {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	clear: right;
+	float: left;
+}
+#footer_menu {
+	width: 740px;
+}
+#main_menu, #footer #bottom_menu { /*background-image: url(http://www.nobelprize.org/images/general/bgimage_whitebg.png);
+	background-color: #8E8888;
+	background-position: 0px -41px;*/
+	width: 690px;
+}
+#main_menu li, #footer_menu li {
+	float: left;
+	height: 26px;
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_whitebg.png);
+	background-color: #8E8888;
+	background-position: 0px -41px;
+}
+#main_menu li a, #footer_menu li a{
+	display: block;
+	padding-top: 5px;
+	padding-right: 29px;
+	padding-left: 29px;
+	font-size: 13px;
+	color: #FFF;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-bottom: 5px;
+}
+#main_menu li.selected a, #footer_menu li.selected a {
+	font-weight: bold !important;
+	padding-right: 25px;
+	padding-left: 25px;
+}
+#footer_menu li a {
+	font-size: 11px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+#main_menu li .first, #footer_menu li .first {
+	padding-left: 22px;
+}
+#main_menu li .last, #footer_menu li .last {
+	padding-right: 22px;
+}
+#main_menu a:hover, #footer_menu a:hover{
+	background-color: #8A8384;
+	border-bottom-style: none;
+}
+#main_menu li.selected {
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_whitebg.png);
+	background-position: 0px -99px;
+}
+#main_menu li.selected a:hover {
+	background-color: transparent;
+}
+#footer {
+	clear: both;
+	float: left;
+	width: 100%;
+	margin-top: 24px;
+}
+#footer #bottom_menu {
+	float: left;
+	height: 26px;
+	width: 100%;
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_whitebg.png);
+	background-repeat: repeat-x;
+	background-position: 0px -41px;
+}
+
+/* mirek ändrat width till 735*/
+#footer #bottom_menu_left {
+	float: left;
+	width: 720px;
+	height: 26px;
+}
+
+
+#footer #bottom_menu_right {
+	float: right;
+	height: 26px;
+	font-size: 0.92em;
+	color: #FFF;
+}
+
+/* OLD TAKE BACK IF */
+/* 
+#footer #bottom_menu_right .inside {
+	padding-top: 5px;
+	padding-right: 24px;
+}
+*/
+
+#bottom_menu_right {
+	font-size: 11px;
+    float: right;
+	height: 26px;
+    background-image: url(http://www.nobelprize.org/images/general/bgimage_whitebg.png);
+	background-color: #8E8888;
+	background-position: 0px -41px;
+    color:#FFFFFF;
+    text-decoration:none;
+}
+
+#bottom_menu_right a:hover {
+  	background-color: #8A8384;
+	background-image:none;
+	border-bottom-style: none;
+}
+
+#bottom_menu_right a {
+	display: block;
+	padding-top: 5px;
+	padding-right: 29px;
+	padding-left: 29px;
+	font-size: 11px;
+	color: #FFF;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-bottom: 5px;
+}
+
+/* SLUT mirek*/
+
+#footer .helplink_area {
+	height: 50px;
+}
+#footer .helplink_area .inside {
+	padding-top: 8px;
+}
+#footer .helplink_area {
+	font-size: 0.92em;
+}
+#left_navigation ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+#left_navigation a:hover {
+	border-bottom-color: #DBA80A !important;
+}
+#left_navigation ul li {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 9px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #D7D5D5;
+	padding-right: 9px;
+}
+#left_navigation ul li a {
+	color: #8A8384;
+	text-decoration: none;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: transparent;/*display: block;*/
+}
+* html #left_navigation ul li a {
+	border-bottom-color: #ffffff;
+	border: 0px;
+	border-style: none;
+}
+#left_navigation ul li a:hover {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #DBA80A;
+}
+#left_navigation ul li .selected {
+	font-weight: bold;
+	font-size: 13px;
+}
+#left_navigation a.selected {
+	color: #024664 !important;
+}
+#left_navigation ul li ul li {
+	border-style: none;
+}
+#left_navigation ul li.selected {
+	background-image: url(http://www.nobelprize.org/images/general/left_nav_bg.jpg);
+	background-repeat: no-repeat;
+	background-color: #FBFAFA;
+}
+#left_navigation ul li.selected ul li a {
+	color: #746C69;
+}
+#main_area {
+	background-color: #FFF;
+	float: left;
+}
+#left_navigation ul .selected .dot {
+	margin-left: -9px;
+	padding-left: 9px;
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_20121204.png);
+	background-position: 0px -124px;
+	background-repeat: no-repeat;
+}
+#left_navigation ul .selected ul li .dot {
+	margin-left: -18px;
+	padding-left: 18px;
+	margin-right: -9px;
+}
+#left_navigation ul .selected ul li ul li .dot {
+	margin-left: -27px;
+	padding-left: 27px;
+	margin-right: -18px;
+}
+#left_navigation ul .selected ul li ul li ul li .dot {
+	margin-left: -36px;
+	padding-left: 36px;
+	margin-right: -27px;
+}
+/* Tool Area */
+
+.tool_area {
+	height: 26px;
+	font-size: 11px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #D7D5D5;
+	clear: both;
+}
+.tool_area a {
+	display: block;
+}
+.tool_area ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	float: right;
+	clear: both;
+	width: 400px;
+}
+.tool_area ul li {
+	float: left;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #D7D5D5;
+	margin-top: 6px;
+}
+.tool_area ul li a {
+	color: #746C69;
+}
+.tool_area ul li a:hover {
+	border-bottom-style: none;
+}
+.tool_area ul li a:link.printer_friendly, .tool_area ul li a:visited.printer_friendly {
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_20121204.png);
+	background-position: -531px -742px;
+	height: 17px;
+	width: 104px;
+}
+.tool_area ul li a:hover.printer_friendly {
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_20121204.png);
+	background-position: -531px -792px;
+}
+.tool_area ul li a:link.share, .tool_area ul li a:visited.share {
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_20121204.png);
+	background-position: -531px -1042px;
+	height: 17px;
+	width: 53px;
+}
+.tool_area ul li a:hover.share {
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_20121204.png);
+	background-position: -531px -1092px;
+}
+.tool_area ul li a:link.tell_a_friend, .tool_area ul li a:visited.tell_a_friend {
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_20121204.png);
+	background-position: -531px -1192px;
+	height: 17px;
+	width: 86px;
+}
+.tool_area ul li a:hover.tell_a_friend {
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_20121204.png);
+	background-position: -531px -1242px;
+}
+.tool_area ul li a:link.comments, .tool_area ul li a:visited.comments {
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_20121204.png);
+	background-position: -531px -892px;
+	height: 17px;
+	width: 78px;
+}
+.tool_area ul li a:hover.comments {
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_20121204.png);
+	background-position: -531px -942px;
+}
+.tool_area ul li a:link.wm, .tool_area ul li a:visited.wm {
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_20121204.png);
+	background-position: -347px -742px;
+	height: 17px;
+	width: 102px;
+}
+.tool_area ul li a:hover.wm {
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_20121204.png);
+	background-position: -347px -792px;
+}
+.tool_area ul li a:link.flash, .tool_area ul li a:visited.flash {
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_20121204.png);
+	background-position: -347px -1192px;
+	height: 17px;
+	width: 49px;
+}
+.tool_area ul li a:hover.flash {
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_20121204.png);
+	background-position: -347px -1242px;
+}
+.tool_area ul li a:link.addthis, .tool_area ul li a:visited.addthis {
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_20121204.png);
+	background-position: -347px -892px;
+	height: 17px;
+	width: 123px;
+}
+.tool_area ul li a:hover.addthis {
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_20121204.png);
+	background-position: -347px -942px;
+}
+.tool_area ul li a:link.help, .tool_area ul li a:visited.help {
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_20121204.png);
+	background-position: -347px -1042px;
+	height: 17px;
+	width: 43px;
+}
+.tool_area ul li a:hover.help {
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_20121204.png);
+	background-position: -347px -1092px;
+}
+.tool_area ul li.last {
+	border-right-style: none;
+	padding-right: 0px;
+}
+#content_area span.caption {
+	font-size: 0.92em;
+	display: block;
+	padding-top: 5px;
+}
+#middle_area {
+	clear: both;
+	float: left;
+	background-color: #FFF;
+}
+/* Banners  and Frontpage boxes*/ 
+
+.banner_wrapper {
+	border: 1px solid #718488;
+}
+.banner_wrapper .banner_title {
+	background-color: #718488;
+	color: #FFF;
+	font-size: 0.92em;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 8px;
+	font-weight: bold;
+}
+
+.banner_wrapper .bottom_link {
+	background-color: #718488;
+	color: #FFF;
+	font-size: 0.92em;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 8px;
+	font-weight: bold;
+}
+
+.banner_wrapper .bottom_link a {
+	color: #FFF;
+}
+
+.banner_wrapper .bottom_link a:hover {
+	border-bottom-color: #FFF;
+}
+
+
+#front_wrapper {
+	clear: both;
+	float: left;
+	padding: 0px;
+	width: 100%;
+	background-image: url(http://www.nobelprize.org/images/general/front_bglines_bottom.gif);
+	background-repeat: repeat-y;
+	background-position: 0px 28px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 24px;
+	margin-left: 0px;
+}
+#front_wrapper #front_left {
+	float: left;
+	width: 737px;
+	margin: 0px;
+	padding: 0px;
+}
+#front_wrapper #front_right {
+	float: right;
+	width: 202px;
+	margin-top:8px;
+}
+#front_left #front_column_one {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	width: 515px;
+}
+#front_left #front_column_two {
+	float: right;
+	width: 219px;
+	margin: 0px;
+	padding: 0px;
+	/*background-image: url(http://www.nobelprize.org/images/general/front_bglines_empty.gif);*/
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+#front_top {
+	margin-top: 13px;
+	/*border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #D7D5D5;*/
+	margin-bottom: 10px;
+}
+.front_ingress {
+	font-size: 1.167em;
+	line-height: 1.42em;
+	color: #8A8384;
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 15px;
+	padding-left: 0px;
+}
+#front_top h1 {
+	font-weight: normal;
+	margin-top: 0px;
+	padding-top: 7px !important;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+/*#front_top a {
+	padding-left: 15px;
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_20121204.png);
+	background-repeat: no-repeat;
+	background-position: 0px -1140px;
+	margin-left: 9px;
+}*/
+.column_title {
+	font-size: 1.08em;
+	color: #746C69;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+#front_right .column_title {
+	padding-bottom: 8px;
+}
+.image_copyright {
+	font-size: 0.75em;
+	color: #8A8384;
+	padding-top: 0px;
+	margin: 0px;
+}
+.line_start {
+	font-size: 0.83em;
+	color: #746C69;
+	padding-right: 9px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.line_start_link {
+	font-size: 0.83em;
+	padding-right: 9px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.text_link {
+	padding-left: 13px;
+	background-image: url(http://www.nobelprize.org/images/general/bg_icons.png);
+	background-repeat: no-repeat;
+	background-position: -11px -277px;
+}
+*html .text_link {
+	background-image: url(http://www.nobelprize.org/images/general/ie6_arrow.gif);
+	background-repeat: no-repeat;
+	background-position: 0px 5px;
+}
+.group_title {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #D7D5D5;
+	padding-top: 4px;
+	/*padding-bottom: 12px;*/
+}
+.group_title .column_title {
+	font-size: 0.92em;
+	color: #8A8384;
+}
+.group_title.second {
+	margin-top: 20px;
+}
+#front_right .group_title {
+	border-top-style: none !important;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#front_right .group_title.second {
+	border-top-width: 1px;
+	border-top-style: solid !important;
+	border-top-color: #D7D5D5;
+}
+.box {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #D7D5D5;
+	width: 515px;
+}
+.box_small {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #D7D5D5;
+	width: 202px;
+}
+
+.widget_noline {
+	border-bottom-style: none !important;
+	width: 202px;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+}
+
+
+.box_banner {
+	width: 200px;
+}
+.type_1a, .type_1b, .type_2d, .type_1d, .type_2e, .type_1e, .type_1f, .type_1g {
+	padding-bottom: 11px;
+	padding-top: 8px;
+}
+.type_1c, .type_2a, .type_2b, .type_2c {
+	padding-bottom:11px;
+	padding-top: 8px;
+}
+.type_3a, .type_3b {
+	margin-bottom: 13px;
+	margin-top: 8px;
+}
+
+#announcement_calendar .banner_title 
+{
+	background-color: #DBA80A;
+}
+
+#announcement_calendar .color_background 
+{
+	background-color: #EFEADC !important;
+}
+
+.type_b_1a, .type_b_2a, .type_b_3b, .type_b_3d, .type_b_3e {
+	padding-top: 8px;
+	padding-right: 10px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+}
+.type_b_3c {
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+}
+.type_b_3a {
+	padding-top: 15px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+}
+.box p, .box_small p, .box_banner p {
+	margin: 0px;
+	padding-top: 4px;
+	padding-right: 0px;
+	padding-bottom: 7px;
+	padding-left: 0px;
+}
+.box_banner p {
+	font-size: 0.92em;
+	line-height: 1.5em;
+	padding-bottom: 8px;
+}
+.type_2d h3, .type_1d h3, .type_1g h3, .type_b_1a h3, .type_b_2a h3, .type_b_3b h3, .type_b_3c h3, .type_b_3d h3, .type_b_3e h3 {
+	font-size: 1.17em;
+	color: #024664;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+}
+.type_b_3b h3, .type_b_3d h3, .type_b_3e h3 {
+	padding-bottom:8px;
+}
+
+.type_b_3d h3 {
+	font-weight:bold;
+}
+.type_b_3c h3 {
+	padding-bottom:8px;
+}
+.type_1b h2, .type_2a h2, .type_2b h2, .type_2c h2, .type_3a h2, .type_3b h2, .type_2e h3, .type_1e h3 {
+	font-size: 1.75em;
+	line-height:1em;
+	color: #024664;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+}
+
+.type_1b h2 {
+	padding-top:10px;
+}
+
+.type_1e h3 {
+	padding-bottom:8px;
+}
+.box_small .type_2e h3 {
+	padding-bottom: 8px;
+}
+.type_1a h2, .type_1f h3 {
+	font-size: 2.25em;
+	font-weight: normal;
+	color: #024664;
+	margin: 0px;
+	line-height:1em;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 3px;
+	padding-left: 0px;
+}
+.type_1c h2 {
+	font-size: 3.25em;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+}
+.box_small .type_1e ul {
+	list-style-type: none;
+	padding-left: 0px;
+	padding-top: 0px;
+	margin: 0px;
+}
+.box_small .type_1e ul li {
+	padding-bottom: 1px;
+}
+.box_small .type_1d img, .box .type_1b img {
+	padding-bottom: 0px;
+}
+.box .image_left {
+	float: left;
+	padding: 0px;
+	width: 171px;
+	margin-bottom: 2px;
+}
+.box_small .image_left {
+	float: left;
+	padding: 0px;
+	width: 73px;
+	margin-bottom: 5px;
+}
+.box_small .type_2e .image_left {
+	float: left;
+	padding: 0px;
+	width: 70px;
+	margin-bottom: 5px;
+}
+.box .image_left .inner, .box_small .image_left .inner {
+	padding-bottom: 0px;
+}
+.box .image_right {
+	float: right;
+	padding: 0px;
+	width: 171px;
+	margin-bottom: 5px;
+}
+.box .image_right_blood {
+	float: right;
+	padding: 0px;
+	width: 219px;
+	margin-bottom: 0px;
+}
+.box .image_right .inner {
+	padding-bottom: 0px;
+	padding-left:11px;
+}
+.image_left .image_copyright {
+	padding-right: 11px;
+}
+.type_2b .text_right {
+	float: right;
+	height: 160px;
+	width: 342px;
+}
+.type_2c .text_left {
+	float: left;
+	height: 160px;
+	width: 342px;
+}
+#front_column_two .inside {
+	padding-left: 19px;
+}
+.type_3a .inner {
+	padding-top: 19px;
+	padding-right: 9px;
+	padding-bottom: 19px;
+	padding-left: 241px;
+}
+
+.type_3b .inner {
+	padding-top: 19px;
+	padding-left: 9px;
+	padding-bottom: 19px;
+	padding-right: 241px;
+}
+
+.type_b_3a a {
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 35px;
+	text-decoration: none;
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_20121204.png);
+	background-repeat: no-repeat;
+}
+
+.type_3a a.text_link, .type_3b a.text_link {
+	background-color: #EDEDED;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-right: 8px;
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_20121204.png) 
+!important;
+	background-repeat: no-repeat;
+	background-position: -529px -1328px;
+	padding-left: 17px;
+}
+
+.type_b_3a a:hover, .type_b_3b a:hover, .type_b_3c a:hover, .type_b_3e a:hover {
+	border-bottom-color: transparent !important;
+}
+
+.type_b_3a a span, .type_b_3b a span, .type_b_3c a span, .type_b_3e a span {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: transparent;
+}
+
+.type_b_3a a:hover span, .type_b_3b a:hover span, .type_b_3c a:hover span, .type_b_3e a:hover span {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #307598;
+}
+
+.type_b_3d a:hover {
+	background-color:#DBA80A !important;
+	color:#FFFFFF !important;
+	text-decoration: none !important;
+	border-bottom: 1px solid transparent;
+	
+}
+
+
+a.youtube {
+	background-position: -531px -1367px;
+}
+a.facebook {
+	background-position: -531px -1403px;
+}
+a.googleplus {
+	background-position: -531px -1920px;
+}
+a.twitter {
+	background-position: -531px -1448px;
+}
+a.instagram {
+	background-position: -531px -1884px;
+}
+a.storifyb {
+	background-position: -531px -1849px;
+}
+a.newsletter {
+	background-position: -531px -1484px;
+}
+a.rss {
+	background-position: -531px -1520px;
+}
+a:hover.youtube {
+	background-position: -531px -1552px;
+}
+a:hover.facebook {
+	background-position: -531px -1588px;
+}
+a:hover.googleplus {
+	background-position: -531px -1812px;
+}
+a:hover.twitter {
+	background-position: -531px -1633px;
+}
+a:hover.instagram {
+	background-position: -531px -1776px;
+}
+a:hover.storifyb {
+	background-position: -531px -1741px;
+}
+a:hover.newsletter {
+	background-position: -531px -1669px;
+}
+a:hover.rss {
+	background-position: -531px -1705px;
+}
+*html .type_3a a.text_link, *html .type_3b a.text_link {
+	background-image: url(http://www.nobelprize.org/images/general/ie6_arrow.gif);
+	background-repeat: no-repeat;
+	background-position: 0px 5px;
+}
+.box p.empty {
+	padding-bottom: 0px;
+}
+.type_b_3b .text_content a, .type_b_3c .text_content a, .type_b_3d .text_content a, .type_b_3e .text_content a {
+	display: block;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-right: -10px;
+	margin-left: -10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.type_b_3e .text_content a {
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-left:0px;
+	padding-right:0px;
+	padding-top: 0px;
+	padding-bottom: 6px;
+}
+
+.type_b_3e .text_content a img.arrow {
+		margin-bottom:-2px;
+}
+
+.type_b_3b .even, .type_b_3c .even {
+	background-color: #EAF2F4;
+}
+
+.type_b_3d .even {
+	background-color: #F4F4EA !important;
+}
+
+.type_b_3b .even.last, .type_b_3c .even.last, .type_b_3d .even.last {
+	margin-bottom: 6px;
+}
+
+.type_b_3b .padding, .type_b_3d .padding, .type_b_3e .padding {
+	display: block;
+	padding-top: 5px;
+}
+.type_b_3c .date {
+	font-size: 0.83em;
+	font-weight: bold;
+	color: #746C69;
+	text-align: right;
+	width: 163px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #746C69;
+	padding-bottom: 3px;
+}
+.type_b_3c .date_wrapper {
+	background-image: url(http://www.nobelprize.org/images/general/calendar_clock_bgcolour.gif);
+	background-repeat: no-repeat;
+	background-position: right 3px;
+	margin-left: -10px;
+	padding-left: 10px;
+	height: 20px;
+	margin-right: -2px;
+	padding-right: 2px;
+	padding-top: 5px;
+}
+.type_b_1a .line_start {
+	margin: 0px;
+	padding: 0px;
+}
+.type_b_1a .line_start {
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 4px;
+	padding-left: 0px;
+}
+.box_small .image_copyright {
+	padding-bottom: 11px;
+}
+.box_banner .wide_image {
+	/*margin-left: -1px;*/
+	margin-left:0;
+	width:200px;
+	overflow:hidden;
+}
+.box_banner .text_content {
+	margin: 0px;
+	padding: 0px;
+}
+.color_background {
+	background-color: #D8E0E3;
+}
+.box_banner a {
+	color: #307598;
+}
+#front_top #front_image {
+	height: 235px;
+	width: 960px;
+	overflow: hidden;
+}
+#laureate_1 .inside {
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 14px;
+	padding-bottom: 4px;
+	padding-left: 0px;
+}
+#content_area h3 {
+	padding-bottom: 10px;
+}
+/* Prize and Laureate Index including slider etc. */
+
+fieldset {
+	border:0;
+	margin: 0;
+}
+.ui-slider {
+	clear: both;
+	width: 400px;
+	margin-left: 0px;
+}
+.slider_cell {
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_20121204.png);
+	background-position: 0px -86px;
+	height: 16px;
+	margin: 0px;
+	padding: 0px;
+}
+.year_start, .year_end {
+	font-size: 9px;
+	color: #928F8F;
+	padding-bottom: 3px;
+}
+.year_start {
+	float: left;
+}
+.year_end {
+	float: right;
+	text-align: right;
+	padding-right:12px;
+}
+.tooltip_title, .tooltip_text {
+	font-size: 10px;
+	color: #928F8F;
+	display: block;
+}
+.tooltip_title {
+	padding-left: 45px;
+}
+.tooltip_text {
+	padding-left: 51px;
+}
+.slider_tooltip_title {
+	color: #024664;
+	margin-bottom: 0px;
+	padding-bottom: 2px;
+	font-size: 11px;
+}
+.slider_tooltip_name {
+	color: #A6A3A3;
+	font-size: 10px;
+	line-height: 14px;
+}
+#slider_form {
+	margin: 0px;
+	padding: 0px;
+}
+input#change_year {
+	font-size: 11px;
+	font-weight: normal;
+	color: #928F8F;
+	margin: 0px;
+	padding: 0px;
+	height: 12px;
+	width: 32px;
+	border: 1px solid transparent;
+	background-color: transparent;
+}
+/* IE6 */
+* html input#change_year {
+	border: 1px solid #FFF;
+	height: 12px;
+	width: 36px;
+	background-color: transparent;
+}
+ul.year_navigation {
+	list-style-type: none;
+	width: 85px;
+	clear: both;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+.year_navigation li {
+	float: left;
+}
+li.year_input {
+	width: 40px;
+	margin: 0px;
+	padding: 0px;
+	height: 19px;
+}
+*html li.year_input {
+	overflow: hidden;
+}
+li.year_input .inside {
+	border: 1px solid #D7D5D5;
+	padding-left: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+ul.year_navigation a.prev_year {
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_20121204.png);
+	background-position: -532px -168px;
+	height: 17px;
+	width: 17px;
+	display: block;
+	float: left;
+}
+ul.year_navigation a.next_year {
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_20121204.png);
+	background-position: -532px -218px;
+	height: 17px;
+	width: 17px;
+	display: block;
+	float: left;
+}
+ul.year_navigation a.next_year img, ul.year_navigation a.prev_year img {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+ul.year_navigation a:hover.prev_year {
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_20121204.png);
+	background-position: -532px -262px;
+	height: 17px;
+	width: 17px;
+}
+ul.year_navigation a:hover.next_year {
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_20121204.png);
+	background-position: -532px -307px;
+	height: 17px;
+	width: 17px;
+}
+.year_navigation li.next {
+	padding-left: 5px;
+}
+.year_navigation .prev {
+	padding-top: 2px;
+	margin-right: 5px;
+}
+.year_navigation .next {
+	padding-top: 2px;
+}
+#list_dropdown select#list_select {
+	font-size: 11px;
+	color: #8A8384;
+	height: 18px;
+	width: 250px;
+	border: 1px solid #D7D5D5;
+}
+#list_dropdown {
+	float: left;
+}
+#category_select_title {
+	float: right;
+	font-size: 11px;
+	font-weight: normal;
+	color: #8A8384;
+	padding-top: 1px;
+}
+#select_category {
+	font-size: 11px;
+	color: #8A8384;
+	height: 18px;
+	width: 83px;
+	border: 1px solid #D7D5D5;
+}
+#slider_area {
+	margin-top: -8px;
+	padding-left: 9px;
+	padding-bottom: 10px;
+}
+#slider_list_area {
+	margin-bottom:11px;
+	padding-top:11px;
+	border-top: 1px solid #d7d5d5;
+	border-bottom: 1px solid #d7d5d5;
+}
+.slider_cell select#years {
+	display: none !important;
+	margin: 0px;
+	padding: 0px;
+	height: 10px;
+	visibility: hidden;
+}
+.prize_navigation {
+	padding-top: 6px;
+	margin: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+.laureate_prize_title {
+	padding-left: 55px;
+}
+h1.laureate_title {
+	padding-top: 17px;
+	padding-bottom: 12px;
+}
+.laureate_info_wrapper .laureate_info_left {
+	float: left;
+	width: 223px;
+	background-image: url(http://www.nobelprize.org/images/laureates/bgimage_laureate_box_top.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+* html .laureate_info_wrapper .laureate_info_left {
+	height: 396px;
+}
+.laureate_info_wrapper .laureate_info_right {
+	float: right;
+	width: 280px;
+}
+.laureate_info_left .inside_image {
+	background-image: url(http://www.nobelprize.org/images/laureates/bgimage_laureate_box_bottom.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	min-height: 396px;
+	border: 1px solid #D7D5D5;
+}
+* html .laureate_info_left .inside_image {
+	height:396px;
+}
+.prize_header.chemistry {
+	background-image: url(http://www.nobelprize.org/images/laureates/medal_che.jpg);
+	background-position: 15px 10px;
+	height: 56px;
+	background-repeat: no-repeat;
+}
+.prize_header.physics {
+	background-image: url(http://www.nobelprize.org/images/laureates/medal_phy.jpg);
+	background-position: 15px 10px;
+	height: 56px;
+	background-repeat: no-repeat;
+}
+.prize_header.medicine {
+	background-image: url(http://www.nobelprize.org/images/laureates/medal_medicine.jpg);
+	background-position: 15px 10px;
+	height: 56px;
+	background-repeat: no-repeat;
+}
+.prize_header.literature {
+	background-image: url(http://www.nobelprize.org/images/laureates/medal_lit.jpg);
+	background-position: 15px 10px;
+	height: 56px;
+	background-repeat: no-repeat;
+}
+.prize_header.peace {
+	background-image: url(http://www.nobelprize.org/images/laureates/medal_peace.jpg);
+	background-position: 15px 10px;
+	height: 56px;
+	background-repeat: no-repeat;
+}
+.prize_header.economics {
+	background-image: url(http://www.nobelprize.org/images/laureates/medal_eco.jpg);
+	background-position: 15px 10px;
+	height: 56px;
+	background-repeat: no-repeat;
+}
+.laureate_info_left .inside {
+	padding-top: 16px;
+	padding-right: 12px;
+	padding-bottom: 12px;
+	padding-left: 12px;
+}
+.laureate_info_left .inside p {
+	margin-bottom: 20px;
+}
+.laureate_info_wrapper {
+	clear: both;
+	float: left;
+	margin-bottom: 30px;
+	width: 515px;
+}
+.prize_wrapper {
+	clear: both;
+	float: left;
+	width: 515px;
+	padding-top: 9px;
+}
+.prize_wrapper .laureate_1 {
+	float: left;
+	width: 176px;
+}
+.prize_wrapper .laureate_2 {
+	float: left;
+	width: 176px;
+}
+.prize_wrapper .laureate_3 {
+	float: left;
+	width: 162px;
+}
+.laureate_1 .inside, .laureate_2 .inside {
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 14px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+.laureate_3 .inside {
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+.laureate_1 .inside h3, .laureate_2 .inside h3, .laureate_3 .inside h3 {
+	margin-top:-5px;
+}
+.prize_wrapper.names {
+	margin-bottom: 0px;
+}
+
+h3.laureate_prize_title {
+	padding-bottom: 0px !important;
+	padding-top: 10px;
+	font-size:17px !important;
+}
+
+h4.laureate_prize_title {
+	font-size:14px !important;
+} 
+
+.prize_header.economics h3.laureate_prize_title {
+	font-size: 12px !important;
+}
+.dragspel h3 a:link, .dragspel h3 a:visited {
+	font-size:11px;
+	color: #746C69;
+	font-weight: normal;
+	display: block;
+	height: 22px;
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_whitebg.png);
+	background-position: 0px -281px;
+}
+.dragspel h3 a:hover {
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_whitebg.png);
+	background-position: 0px -311px;
+	color: #DBA80A;
+	border-bottom-color: #FFF;
+}
+.dragspel_left_prize {
+	float: left;
+	width: 253px;
+}
+.dragspel_right_prize {
+	float: right;
+	width: 250px;
+	clear: right;
+}
+.dragspel_laureate_image {
+	float:left;
+	width:70px;
+	margin-bottom:13px;
+}
+.dragspel_laureate_left {
+	float: left;
+	width: 214px;
+}
+.dragspel_laureate_right {
+	float: right;
+	width: 223px;
+	clear: right;
+}
+.dragspel_left_prize .inner ul li a, .dragspel_right_prize .inner ul li a, .dragspel_laureate_left .inner ul li a, .dragspel_laureate_right .inner ul li a {
+	font-size: 11px;
+	color: #746C69;
+}
+.dragspel {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.dragspel_right_prize .inner, .dragspel_laureate_right .inner {
+	padding-right: 9px;
+}
+.dragspel_laureate_image .inner {
+	padding-left: 20px;
+}
+.dragspel li {
+	padding-bottom: 2px;
+	padding-left: 9px;
+}
+.dragspel li a:hover {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #dcaa0b;
+}
+.dragspel .selected_dot a {
+	font-weight: bold;
+	color: #024664 !important;
+}
+.dragspel li.selected_dot {
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_20121204.png);
+	background-position: -533px -126px;
+	background-repeat: no-repeat;
+}
+.dragspel ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	width: 253px;
+	margin-bottom:5px;
+}
+.dragspel_left_prize li {
+	margin-left:21px;
+}
+.dragspel h3 .inside {
+	padding-left: 18px;
+	padding-top: 4px;
+	display:block;
+}
+.dragspel h3 {
+	clear: both;
+	margin: 0px;
+	padding: 0px !important;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #D7D5D5;
+}
+.dragspel h3.selected {
+	border-bottom-style: none !important;
+}
+.dragspel h3.no1 {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #D7D5D5;
+}
+.dragspel a:link.selected_page, .dragspel a:visited.selected_page {
+	color: #024664;
+	font-weight: bold;
+}
+.dragspel h3.selected a:link, .dragspel h3.selected a:visited {
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_whitebg.png);
+	background-position: 0px -341px;
+}
+.dragspel h3.selected a:hover {
+	background-image: url(http://www.nobelprize.org/images/general/bgimage_whitebg.png);
+	background-position: 0px -371px;
+}
+.dragspel .selected_page .inside {
+	/*background-image: url(http://www.nobelprize.org/images/general/bgimage_20121204.png);
+	background-position: -525px -122px;
+	background-repeat: no-repeat;*/
+}
+.dragspel #content_1, .dragspel #content_2, .dragspel #content_3, .dragspel #content_4, .dragspel #content_5, .dragspel #content_6 {
+	display:none;
+}
+.dragspel .showcontent {
+	display:block !important;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #D7D5D5;
+	float:left;
+	width:100%;
+}
+.prize_header_wrapper {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #D7D5D5;
+}
+/* PRESSROOM */
+
+.pressrelease {
+	padding-bottom: 15px;
+}
+#press_header {
+	float: left;
+	width: 515px;
+	margin-top: 9px;
+	margin-bottom: 17px;
+}
+#press_header #press_image {
+	float: left;
+	width: 210px;
+	padding-top: 8px;
+}
+#press_header #press_text {
+	float: right;
+	width: 288px;
+}
+.pr_short {
+	clear: both;
+	float: left;
+	width: 515px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #D7D5D5;
+	padding-top: 11px;
+	padding-bottom: 11px;
+}
+.pr_short .left {
+	float: left;
+	width: 154px;
+}
+.pr_short .text {
+	float: right;
+	width: 361px;
+}
+.pr_short.first {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #D7D5D5;
+}
+.pr_short .text .inside {
+	padding-top: 3px;
+	padding-right: 11px;
+}
+.bio-img {
+	margin: 0px;
+	float: left;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+}
+/* VIDEO PLAYER */
+
+.video_info {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #D7D5D5;
+	margin-bottom: 2px;
+	color: #4F4F4F;
+	margin-top: 11px;
+}
+.video_rating_wrapper {
+	clear: both;
+	float: left;
+	height: 50px;
+	width: 100%;
+}
+.video_rating_wrapper a.help {
+	background-image: url('/mediaplayer/images/help.gif');
+	background-position: 0 0;
+	width: 69px;
+	height: 24px;
+	display: block;
+	margin-left: auto;
+}
+.video_rating_wrapper a.help:hover {
+	background-position: 0 24px;
+	border-bottom: none;
+}
+.video_rating_wrapper .video_download {
+	float: left;
+	height: 55px;
+	width: 360px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #D7D5D5;
+	color: #8A8384;
+	font-size: 0.92em;
+}
+.video_rating_wrapper .video_rating {
+	float: right;
+	width: 357px;
+	color: #4F4F4F;
+	font-size: 0.92em;
+}
+.video_rating_wrapper .ratingtable {
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #8a8384;
+	font-size: 11px;
+	border-collapse: collapse;
+	margin-top: 6px;
+}
+.video_rating_wrapper .ratingtable td {
+/*	border: 1px solid red;	*/
+	padding: 0;
+}
+.video_rating_wrapper .ratingtable tr:first-child td {
+	line-height: 9px
+}
+.video_rating_wrapper .ratingtable tr + tr td {
+	padding-bottom: 6px
+}
+.video_rating_wrapper .ratingtable a {
+	color: #8a8384;
+}
+.video_rating_wrapper .ratingtable a:hover {
+	border-color: #8a8384;
+}
+.video_rating_wrapper .ratingtable p {
+	margin-bottom: 3px;
+}
+.video_rating_wrapper .ratingtable .valign-top {
+	vertical-align: top;	
+}
+.video_rating_wrapper .ratingtable td.rightborder {
+	border-right: 1px solid #D7D5D5;
+	padding-right: 38px;
+}
+.video_rating_wrapper .ratingtable td.leftspacer {
+	padding-left: 38px;
+}
+.video_rating_wrapper form { 
+	zoom: 1; 
+	*display: inline;
+}
+.video_rating_wrapper .avg_starrating {
+	background-image: url('/mediaplayer/images/ratingstars.gif');
+	background-position: 0 0;
+	width: 95px;
+	height: 19px;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	vertical-align: middle;
+}
+.video_rating_wrapper .avg_starrating div { 
+	background-image: url('/mediaplayer/images/ratingstars.gif');
+	background-position: bottom left;
+	height: 19px; 
+}
+.video_rating_wrapper .avg_rating span {
+	font-size: 10px; 
+	color: #000000;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	line-height: 19px;
+}
+.video_rating_wrapper .myratingstars {
+	background-image: url('/mediaplayer/images/myratingstars.gif');
+	background-position: 0 0;
+	width: 74px;
+	height: 15px;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	margin-top: 2px;
+}
+.video_rating_wrapper .myratingstars div {
+	background-image: url('/mediaplayer/images/myratingstars.gif');
+	background-position: bottom left;
+	height: 15px; 
+}
+.video_rating_wrapper input[type=submit] {
+	background-image: url('/mediaplayer/images/submit.gif');
+	height: 19px;
+	width: 46px;
+	background-position: 0 0;
+	border: 0;
+	cursor: pointer;
+}
+.video_rating_wrapper input[type=submit]:hover {
+	background-position: bottom left;
+}
+.video_related {
+	margin-top: 11px;
+	clear: left;
+}
+.media_credits, .media_sponsor {
+	font-size: 0.83em;
+	color: #8A8384;
+	display:block;
+}
+.video_info h3 {
+	margin-bottom: 11px;
+	font-size: 1.17em;
+}
+.video_info p {
+	font-size: 0.92em;
+	line-height:1.08em;
+}
+.video_info h3 span.time {
+	padding-left:9px;
+	font-size: 10px;
+	color: #645A60;
+}
+.video_download .video_download_left {
+	float: left;
+	width: 65px;
+	text-align: right;
+	padding-top: 11px;
+}
+.video_download .video_download_right {
+	float: right;
+	width: 257px;
+	padding-top: 11px;
+}
+.video_download_right a {
+	color: #8A8384;
+}
+/* Square image template*/
+
+.square_image {
+	float: left;
+	margin-right: 11px;
+	padding-top: 5px;
+}
+.square__header {
+	clear: both;
+	float: left;
+	width: 100%;
+	margin-top: 12px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #D7D5D5;
+	margin-bottom: 6px;
+}
+.square__ingress {
+	float: right;
+	width: 288px;
+}
+.square__header .square__image {
+	margin-right: 17px;
+	margin-bottom: 5px;
+}
+.square_header h1 {
+	margin-top: 0px;
+	padding-top: 0px;
+}
+/* Articles */
+
+.article_header h1 {
+	margin-top: 0px;
+	padding-top: 0px;
+	padding-bottom: 12px;
+}
+.article_image {
+	float: left;
+	margin-right: 11px;
+	padding-top: 5px;
+}
+.article_header {
+	clear: both;
+	float: left;
+	width: 100%;
+	margin-top: 12px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #D7D5D5;
+	margin-bottom: 6px;
+}
+.article_ingress {
+	float: right;
+	width: 288px;
+}
+.article_header .article_image {
+	margin-right: 17px;
+	margin-bottom: 5px;
+}
+.article_item {
+	clear: both;
+	float: left;
+	width: 100%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #D7D5D5;
+	margin-bottom: 6px;
+	padding-bottom: 11px;
+	margin-top: 0px;
+}
+.article_item .text {
+	float: right;
+	width: 439px;
+}
+.article_item .text h2 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 14px;
+	padding-bottom: 0px;
+}
+.article_item .article_image {
+	padding-top: 4px;
+}
+.line_start1 {
+	font-size: 0.83em;
+	color: #746C69;
+	padding-right: 9px;
+}
+.article_item .text h3 {
+	padding-top: 0px;
+	margin: 0px !important;
+	padding-bottom: 2px !important;
+}
+.article_item.mid_title {
+	padding-bottom: 3px;
+}
+/* MLA Citation */
+
+.mla_cite {
+	line-height: 1.25em;
+	margin-top: 30px;
+	padding-top: 11px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #D7D5D5;
+	color: #645A60;
+}
+.mla_cite .row1 {
+	font-size: 0.833em;
+	font-weight: bold;
+}
+.mla_cite .row2 {
+	font-size: 0.92em;
+	font-weight: normal;
+}
+/* Blockquote in Ingress */
+
+blockquote.ingress_quote {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.42em;
+	line-height: 1.75em;
+	color: #8a8384;
+	padding: 0px;
+	margin-top: 6px;
+	margin-right: 20px;
+	margin-bottom: 17px;
+	margin-left: 20px;
+}
+blockquote.ingress_quote p {
+	margin-bottom:6px !important;
+	padding:0;
+}
+.ingress_quote_tagline {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: right;
+	font-size: 0.59em;
+	line-height: 1em;
+	padding:0;
+	margin:0;
+}
+/* Video pages */
+
+.video_main {
+	clear: both;
+	float: left;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+.video_time {
+	padding-bottom: 9px;
+}
+.video_copyright {
+	color: #645A60;
+	line-height: 1.25em;
+	font-size:0.91em;
+	margin-top: 0px;
+	margin-bottom: 17px;
+	padding-top: 11px;
+	padding-bottom: 11px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #D7D5D5;
+	border-bottom-color: #D7D5D5;
+}
+span.h4top {
+	display: block;
+}
+.video_link {
+	margin-bottom:11px;
+}
+#content_video_area .tool_area {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #D7D5D5;
+}
+/* Educational css */
+
+.edu_top {
+	padding-bottom:0;
+	margin-bottom:0;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #D7D5D5;
+}
+/* Create a list */
+
+#create_list {
+	border: 1px solid #D7D5D5;
+	margin-top: 5px;
+	padding-left: 22px;
+}
+.createListTbl {
+	font-size: 0.92em;
+	color: #8A8384;
+}
+.createListTbl tr .title {
+	font-weight: bold;
+}
+.createListTbl .cat_area {
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-right-color: #D7D5D5;
+	border-bottom-color: #D7D5D5;
+}
+.createListTbl .text_input {
+	font-size: 0.92em;
+	color: #645A60;
+	font-family: Arial, Helvetica, sans-serif;
+	border: 1px solid #8A8384;
+	padding:2px;
+}
+.createListTbl .text_input .inactive {
+	border: 1px solid #C4C0BF;
+}
+#create_list {
+	border: 1px solid #D7D5D5;
+	margin-top: 5px;
+	padding-left: 22px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+}
+.createListTbl {
+	font-size: 0.92em;
+	color: #8A8384;
+}
+.createListTbl tr .title {
+	font-weight: bold;
+}
+.createListTbl .cat_area {
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-right-color: #D7D5D5;
+	border-bottom-color: #D7D5D5;
+}
+#createList label {
+}
+#createList label input {
+}
+.createListTblCat tr td {
+	margin: 0px;
+	padding: 0px;
+}
+.clearFieldBlurred {
+}
+.clearFieldActive {
+}
+.cl_full {
+    float:left;
+    width:100%;
+    min-height:1px;
+    color: #645A60;
+}
+.cl_left {
+    float:left;
+    width:130px;
+    min-height:1px;
+    line-height: 190%;
+    color: #645A60;
+}
+.cl_right {
+    float:left;
+    margin-left:10px;
+    width:351px;
+    min-height:1px;
+    color: #645A60;
+}
+.cl_clear {
+    width:100%;
+    height:6px;
+    clear:both;
+}
+.cl_hr {
+    width:100%;
+    height:0px;
+    border: dotted 1px #ccc;
+}
+.listSubmit {
+	display: block;
+	height: 24px;
+	width: 78px;
+	background-image: url(http://www.nobelprize.org/images/general/submit.gif);
+}
+
+.listSubmit:hover {
+	display: block;
+	height: 24px;
+	width: 78px;
+	background-image: url(http://www.nobelprize.org/images/general/submit_mo.gif);
+}
+
+.listReset {
+	display: block;
+	height: 24px;
+	width: 62px;
+	border: none;
+	background-image: url(http://www.nobelprize.org/images/general/reset.gif);
+}
+
+a:hover.listReset {
+	display: block;
+	height: 24px;
+	width: 62px;
+	border: none;
+	background-image: url(http://www.nobelprize.org/images/general/reset_mo.gif);
+}
+
+a:hover.listSubmit {
+	background-image: url(http://www.nobelprize.org/images/general/submit_mo.gif);
+}
+.search_result_area {
+	padding-top: 10px;
+}
+.search_item .line_start, .search_item .line_start_link {
+	padding-right: 0px;
+	margin: 0px;
+	padding-top:0px;
+}
+.search_item {
+	margin-bottom: 8px;
+	clear: both;
+	float: left;
+	width: 515px;
+}
+.search_item .search_result_image {
+	float: left;
+	width: 42px;
+}
+.search_item .search_result_main {
+	float: right;
+	width: 464px;
+}
+h2.search_subtitle {
+	font-size: 1.42em;
+	color: #024664;
+	font-weight: normal;
+	margin-bottom:4px;
+	margin-top:7px;
+}
+/* Under construction */
+.type_b_3a .form_area {
+	height: 122px;
+	width: 186px;
+	background: url(/images/general/greeting_box.gif) no-repeat left top;
+}
+
+.type_b_3a .form_area2 { width: 186px; 
+}
+
+.type_b_3a #url {
+	height: 17px;
+	width: 170px;
+	border: 1px solid #FFF;
+	color: #666;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.92em;
+}
+.type_b_3a .input_url {
+	margin-bottom: 12px;
+	padding-top: 2px;
+	padding-left: 2px;
+}
+.type_b_3a .input_comment {
+	padding-left: 2px;
+	margin-top: 20px;
+}
+.type_b_3a #comments {
+	width: 170px;
+	height: 80px;
+	border: 1px solid #FFF;
+	color: #8d8687;
+	font: 0.92em Arial, Helvetica, sans-serif;
+}
+.type_b_3a a.regular_link {
+	background-image: none;
+	display: inline;
+}
+/* Form */
+
+.comments_text {
+	font-size: 0.92em;
+	font-weight: bold;
+	color: #746C69;
+}
+#comment_form #comment {
+	width: 100%;
+	height: 80px;
+}
+table tr .comments_text {
+	padding-top: 5px;
+}
+#comment_form .field_column {
+	padding-bottom: 10px;
+	padding-right: 35px;
+}
+#comment_form #age {
+	width: 40px;
+}
+.prize_copyright {
+	font-size: 0.92em;
+	line-height: 1.25em;
+	color: #645A60;
+	padding-top:11px;
+}
+/* By Year List */
+
+.by_year {
+	margin-top: 0px;
+	margin-bottom: 11px;
+	border-bottom: 1px solid #D7D5D5;
+	padding: 0px;
+}
+.by_year_images {
+	text-align: right;
+	display: block;
+	clear: left;
+	float: left;
+	width: 145px;
+	padding-right: 8px;
+	padding-bottom: 13px;
+}
+.by_year_text {
+	display: block;
+	float: left;
+	width: 345px;
+	padding-bottom: 13px;
+}
+.by_year_clear {
+	display: block;
+	clear:both;
+}
+.by_year_images .no_img_border {
+	padding-left: 6px;
+}
+.motivation {
+	color: #645A60;
+}
+/* Legacy classes */
+.smalltext {
+	font-size: 0.91em;
+	line-height: 1.3em;
+	color: #000000;
+}
+.smalltext_grey {
+	font-size: 0.91em;
+	line-height: 1.3em;
+	color: #645A60;
+}
+.caption {
+	font-size: 0.91em;
+	line-height: 1.3em;
+	color: #000000;
+}
+.copy {
+	font-size: 0.91em;
+	line-height: 1.3em;
+	color: #645A60;
+}
+.credit {
+	font-size: 0.91em;
+	line-height: 1.3em;
+	color: #645A60;
+}
+#front_column_one .image_copyright {
+	height: 12px;
+}
+
+#MP_Download #MP_Download_TextArea .inside .text div .iframe {
+	border: 1px solid #CCC;
+}
+/* Book tips */
+
+.booktips_form {
+	border: 1px solid #D7D5D5;
+	font-size: 11px;
+	color: #645A60;
+	font-weight: bold;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 6px;
+	padding-left: 20px;
+}
+.booktips_form input, .booktips_form select, .booktips_form textarea {
+	width:320px;
+	height:19px;
+	border: 1px solid #8A8384;
+	margin-bottom: 5px;
+	font-size: 11px;
+	color: #645A60;
+	font-weight: normal;
+	padding-top:3px;
+	padding-left:5px;
+}
+.booktips_form select {
+	width:323px;
+	padding-top:0px;
+}
+.booktips_form textarea {
+	height:43px;
+}
+.recommended_area {
+	float: left;
+	clear: both;
+	width: 515px;
+	margin-bottom: 18px;
+}
+.recommended_left .innerleft {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 8px;
+	padding-left: 0px;
+	border-top-style: none;
+	border-right-style-value: none;
+	border-bottom-style: none;
+	border-left-style-value: none;
+}
+.recommended_area .redommendinner {
+	float: left;
+}
+.recommended_left {
+	float:left;
+	width:50px;
+}
+.recommended_right {
+	float:right;
+	width:460px;
+}
+.redommendinner .recommended_left .innerleft {
+	margin: 0px;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 8px;
+	padding-left: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.redommendinner .recommended_right .innerright {
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 15px;
+	padding-bottom: 8px;
+	padding-left: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.recommended_area .redommendinner .recommended_right .booklist {
+	margin:0px;
+	list-style-position: inside;
+	padding: 0px;
+}
+.redommendinner .recommended_right .booklist li {
+	margin:0px;
+	padding: 0px;
+}
+
+.recommended_right h3 {
+	margin-bottom: 0px !important;
+	padding-bottom: 0px !important;
+}
+
+.book { margin-bottom: 3px; }
+
+.book .tips { padding-bottom: 17px; }
+
+.book .tips .name {
+	font-size: 0.92em;
+	color: #645A60;
+}
+
+.greeting_quote { padding: 6px; }
+.greeting_area {
+	border-top: 1px solid #d7d5d5;
+	border-bottom: 1px solid #d7d5d5;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+
+.greeting_area .greeting .text { padding-bottom: 5px; }
+
+.greeting_area .greeting { margin-bottom: 13px; }
+
+.line_start.lower { text-transform: none; }
+
+a.prev_arrow {
+	background-image: url(http://www.nobelprize.org/images/general/bgimage.png);
+	background-repeat: no-repeat;
+	background-position: -531px -169px;
+	padding-left:20px;
+	padding-bottom:3px;
+	padding-top:2px;
+
+}
+
+a:hover.prev_arrow {
+	background-image: url(http://www.nobelprize.org/images/general/bgimage.png);
+	background-repeat: no-repeat;
+	background-position: -531px -262px;
+}
+
+a.next_arrow {
+	background-image: url(http://www.nobelprize.org/images/general/bgimage.png);
+	background-repeat: no-repeat;
+	background-position: -435px -218px;
+	padding-right:20px;
+	padding-bottom:3px;
+}
+
+a:hover.next_arrow {
+	background-image: url(http://www.nobelprize.org/images/general/bgimage.png);
+	background-repeat: no-repeat;
+	background-position: -435px -307px;
+}
+
+
+.greeting_navigation a {
+	color: #746c69;
+	font-size: 0.92em;
+}
+
+.slideshow_top {
+	border-top: 1px solid #d7d5d5;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-color: #d7d5d5;
+	border-bottom-color: #d7d5d5;
+	border-left-color: #d7d5d5;	
+}
+
+.slideshow_notop {
+	
+}
+
+.h3teaser {
+	font-weight: bold;	
+}
+
+#mediaplayer_sponsor {
+	color: #8E8988;
+	font-size:0.9em;
+	margin-top: 0;
+
+}
+
+img.mediaplayer_sponsor_image {
+	padding-left:10px;
+	vertical-align: middle;
+	margin-bottom:5px;
+}
+object, embed {
+	outline: 0;
+}
+
+.numbers {
+	padding-bottom:7 px;
+}
+
+.numbers th {
+	vertical-align:top;
+	text-align:right;
+	font-weight: 100;
+	font-size: 2.273em;
+	color: #EBA80A;
+	padding:0;
+}
+
+.box_small_image_link {
+	text-decoration: none;
+	border: 0;
+	border-bottom: 0;
+}
+.box_small_image_link:hover {
+	text-decoration: none;
+	border: 0;
+	border-bottom: 0;
+}
