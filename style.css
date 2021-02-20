@@ -2821,3 +2821,31 @@ body {
 	border-left-style: solid;
 	border-left-color: #8A8384;
 }
+
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color:  #ffffff;
+}
+
+/* area for flash-game in colored game window, div starts after header and ends before sponsor  */
+#gamearea_flash {
+	background-color: #ffffff;
+}
+
+/* text style for sponsor info in colored game window  */
+#educational #s {
+	background-color: #ffffff;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #cc3300;
+	text-align: right;
+}
+
+/* link style for sponsor info in colored game window  */
+#educational #s .inner a {
+	color: #cc3300;
+	text-decoration: none;
+}
+
