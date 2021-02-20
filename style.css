@@ -2700,3 +2700,124 @@ object, embed {
 	border: 0;
 	border-bottom: 0;
 }
+
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-image: none;	
+}
+
+
+#gamearea_flash .inner {
+	margin: 0px;
+	padding-top: 50px;
+	padding-right: 0px;
+	padding-bottom: 60px;
+	padding-left: 0px;
+	text-align:center;
+	clear:both;
+	height: 600px;
+}
+
+
+
+#s ,inner {
+	margin: 0px;
+	padding: 2px 14px 14px 0px;
+}
+
+#edu_footer {
+	text-align:center;
+	width:100%;
+	clear:both;
+	float:left;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #8a8384;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #8a8384;
+	background-color: #FFFFFF;
+	margin-top: 5px;
+}
+
+#edu_footer_left {
+	float:left;
+	width:300px;
+	text-align:left;
+	color: #8A8384;	
+}
+
+#edu_footer_left .inner {
+	padding-left:25px;
+	font-size: 0.9em;
+	padding-top: 5px;
+}
+
+#edu_footer_right {
+	float:right;
+	width:275px;
+	text-align:right;
+}
+
+#edu_footer_right .inner {
+	padding-right:25px;
+	font-size: 0.9em;	
+	padding-top: 5px;
+}
+
+#edu_footer_right .inner a{
+	color: #8A8384;	
+}
+
+#RateThis, #Comments, #TellaFriend {
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #8A8384;	
+	margin-bottom:3px;
+}
+
+#TellaFriend, #Help, #Add {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #8A8384;
+	margin-bottom:3px;
+}
+
+#layout_header_edu {
+	clear: both;
+	float: left;
+	height: 80px;
+	width: 100%;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #8A8384;
+	background-color: #FFFFFF;
+}
+
+#layout_header_edu_logo_new {
+	float: left;
+	width: 294px;
+	margin-top:5px;
+}
+
+.game_windows_back {
+	float: right;
+	margin-right:2px;
+}
+
+.game_windows_back .back_item {
+	text-align: right;
+}
+.game_windows_back .back_text .inside {
+	color: #645A60;
+	padding-right: 5px;
+	font-size:0.91em;
+}
+
+.game_windows_back .inside .back_item #Back {
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #8A8384;
+}
